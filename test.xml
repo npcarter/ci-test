@@ -1,8 +1,10 @@
- <testcase name="foo"
+ <root>
+ 	<testcase name="foo"
             time="10:46"/>
- <testcase name="bar"
+ 	<testcase name="bar"
             time="10:47">
-    <failure type="failure">
-        hosed
-    </failure>
-  </testcase>
+    	<failure type="failure">
+        	hosed
+    	</failure>
+  	</testcase>
+ </root>
