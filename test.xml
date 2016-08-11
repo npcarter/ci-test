@@ -1,18 +1,370 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-   <testsuite name="JUnitXmlReporter" errors="0" tests="0" failures="0" time="0" timestamp="2013-05-24T10:23:58" />
-   <testsuite name="JUnitXmlReporter.constructor" errors="0" skipped="1" tests="3" failures="1" time="0.006" timestamp="2013-05-24T10:23:58">
-      <properties>
-         <property name="java.vendor" value="Sun Microsystems Inc." />
-         <property name="compiler.debug" value="on" />
-         <property name="project.jdk.classpath" value="jdk.classpath.1.6" />
-      </properties>
-      <testcase classname="JUnitXmlReporter.constructor" name="should default path to an empty string" time="0.006">
-         <failure message="test failure">Assertion failed</failure>
-      </testcase>
-      <testcase classname="JUnitXmlReporter.constructor" name="should default consolidate to true" time="0">
-         <skipped />
-      </testcase>
-      <testcase classname="JUnitXmlReporter.constructor" name="should default useDotNotation to true" time="0" />
-   </testsuite>
+  <testsuite name="easel" errors="0" skipped="0" tests="69" failures="1" time="0" timestamp="2013-05-24T10:23:58">
+    <testcase classname="easel" name="alphabet-utest" time="0"/>
+    <testcase classname="easel" name="buffer-utest" time="0"/>
+    <testcase classname="easel" name="cluster-utest" time="0"/>
+    <testcase classname="easel" name="dirichlet-utest" time="0"/>
+    <testcase classname="easel" name="distance-utest" time="0"/>
+    <testcase classname="easel" name="dmatrix-utest" time="0"/>
+    <testcase classname="easel" name="dsqdata-utest" time="0"/>
+    <testcase classname="easel" name="easel-utest" time="0"/>
+    <testcase classname="easel" name="exponential-utest" time="0"/>
+    <testcase classname="easel" name="fileparser-utest" time="0"/>
+    <testcase classname="easel" name="gamma-utest" time="0"/>
+    <testcase classname="easel" name="gencode-utest" time="0"/>
+    <testcase classname="easel" name="getopts-utest" time="0"/>
+    <testcase classname="easel" name="gumbel-utest" time="0"/>
+    <testcase classname="easel" name="heap-utest" time="0"/>
+    <testcase classname="easel" name="histogram-utest" time="0"/>
+    <testcase classname="easel" name="huffman-utest" time="0"/>
+    <testcase classname="easel" name="hyperexp-utest" time="0"/>
+    <testcase classname="easel" name="keyhash-utest" time="0"/>
+    <testcase classname="easel" name="mem-utest" time="0"/>
+    <testcase classname="easel" name="msa-utest" time="0"/>
+    <testcase classname="easel" name="msacluster-utest" time="0"/>
+    <testcase classname="easel" name="msafile" time="0"/>
+    <testcase classname="easel" name="msafile2" time="0"/>
+    <testcase classname="easel" name="msafile-a2m" time="0"/>
+    <testcase classname="easel" name="msafile-afa" time="0"/>
+    <testcase classname="easel" name="msafile-clustal" time="0"/>
+    <testcase classname="easel" name="msafile-phylip" time="0"/>
+    <testcase classname="easel" name="msafile-psiblast" time="0"/>
+    <testcase classname="easel" name="msafile-selex" time="0"/>
+    <testcase classname="easel" name="msafile-stockholm" time="0"/>
+    <testcase classname="easel" name="msaweight-utest" time="0"/>
+    <testcase classname="easel" name="neon-utest" time="0"/>
+    <testcase classname="easel" name="normal-utest" time="0"/>
+    <testcase classname="easel" name="quicksort-utest" time="0"/>
+    <testcase classname="easel" name="random-utest" time="0"/>
+    <testcase classname="easel" name="randomseq-utest" time="0"/>
+    <testcase classname="easel" name="ratematrix-utest" time="0"/>
+    <testcase classname="easel" name="recorder-utest" time="0"/>
+    <testcase classname="easel" name="regexp-utest" time="0"/>
+    <testcase classname="easel" name="rootfinder-utest" time="0"/>
+    <testcase classname="easel" name="scorematrix-utest" time="0"/>
+    <testcase classname="easel" name="sq-utest" time="0"/>
+    <testcase classname="easel" name="sqio-utest" time="0"/>
+    <testcase classname="easel" name="ssi-utest" time="0">
+      <failure/>
+    </testcase>
+    <testcase classname="easel" name="stack-utest" time="0"/>
+    <testcase classname="easel" name="stats-utest" time="0"/>
+    <testcase classname="easel" name="stretchexp-utest" time="0"/>
+    <testcase classname="easel" name="tree-utest" time="0"/>
+    <testcase classname="easel" name="vectorops-utest" time="0"/>
+    <testcase classname="easel" name="weibull-utest" time="0"/>
+    <testcase classname="easel" name="wuss-utest" time="0"/>
+    <testcase classname="easel" name="e2" time="0"/>
+    <testcase classname="easel" name="degen-residues" time="0"/>
+    <testcase classname="easel" name="ncbi-indices" time="0"/>
+    <testcase classname="easel" name="blank-gf" time="0"/>
+    <testcase classname="easel" name="esl-translate" time="0"/>
+    <testcase classname="easel" name="esl-afetch" time="0"/>
+    <testcase classname="easel" name="esl-alimanip" time="0"/>
+    <testcase classname="easel" name="esl-alimap" time="0"/>
+    <testcase classname="easel" name="esl-alimask" time="0"/>
+    <testcase classname="easel" name="esl-alimerge" time="0"/>
+    <testcase classname="easel" name="esl-alistat" time="0"/>
+    <testcase classname="easel" name="esl-compalign" time="0"/>
+    <testcase classname="easel" name="esl-construct" time="0"/>
+    <testcase classname="easel" name="esl-mask" time="0"/>
+    <testcase classname="easel" name="esl-seqrange" time="0"/>
+    <testcase classname="easel" name="esl-shuffle" time="0"/>
+    <testcase classname="easel" name="esl-ssdraw" time="0"/>
+  </testsuite>
+  <testsuite name="hmmer" errors="0" skipped="0" tests="243" failures="25" time="0" timestamp="2013-05-24T10:23:58">
+    <testcase classname="hmmer" name="p7_alidisplay" time="0"/>
+    <testcase classname="hmmer" name="p7_anchors" time="0"/>
+    <testcase classname="hmmer" name="p7_anchorhash" time="0"/>
+    <testcase classname="hmmer" name="p7_bg" time="0"/>
+    <testcase classname="hmmer" name="p7_hmm" time="0"/>
+    <testcase classname="hmmer" name="p7_hmmfile" time="0"/>
+    <testcase classname="hmmer" name="p7_profile" time="0"/>
+    <testcase classname="hmmer" name="p7_scoredata" time="0"/>
+    <testcase classname="hmmer" name="p7_tophits" time="0"/>
+    <testcase classname="hmmer" name="p7_trace" time="0"/>
+    <testcase classname="hmmer" name="build" time="0"/>
+    <testcase classname="hmmer" name="modelsample" time="0"/>
+    <testcase classname="hmmer" name="seqmodel" time="0"/>
+    <testcase classname="hmmer" name="reference_fwdback" time="0"/>
+    <testcase classname="hmmer" name="reference_decoding" time="0"/>
+    <testcase classname="hmmer" name="reference_viterbi" time="0"/>
+    <testcase classname="hmmer" name="reference_envelopes" time="0"/>
+    <testcase classname="hmmer" name="ref..asc_fwdback" time="0">
+      <failure/>
+    </testcase>
+    <testcase classname="hmmer" name="ref..asc_decoding" time="0"/>
+    <testcase classname="hmmer" name="ref..aec_align" time="0"/>
+    <testcase classname="hmmer" name="sparse_fwdback" time="0"/>
+    <testcase classname="hmmer" name="sparse_decoding" time="0"/>
+    <testcase classname="hmmer" name="sparse_asc_fwdback" time="0"/>
+    <testcase classname="hmmer" name="sparse_aec_align" time="0"/>
+    <testcase classname="hmmer" name="sparse_envscore" time="0"/>
+    <testcase classname="hmmer" name="sparse_masstrace" time="0"/>
+    <testcase classname="hmmer" name="fwdfilter" time="0"/>
+    <testcase classname="hmmer" name="vector_io" time="0"/>
+    <testcase classname="hmmer" name="msvfilter" time="0"/>
+    <testcase classname="hmmer" name="vitfilter" time="0"/>
+    <testcase classname="hmmer" name="emit" time="0"/>
+    <testcase classname="hmmer" name="logsum" time="0"/>
+    <testcase classname="hmmer" name="trace_metrics" time="0"/>
+    <testcase classname="hmmer" name="modelconfig" time="0"/>
+    <testcase classname="hmmer" name="hmmbuild_variation" time="0"/>
+    <testcase classname="hmmer" name="hmmscan_variation" time="0">
+      <failure/>
+    </testcase>
+    <testcase classname="hmmer" name="hmmsearch_variation" time="0"/>
+    <testcase classname="hmmer" name="phmmer_variation" time="0"/>
+    <testcase classname="hmmer" name="h45" time="0"/>
+    <testcase classname="hmmer" name="h50" time="0"/>
+    <testcase classname="hmmer" name="mapali" time="0"/>
+    <testcase classname="hmmer" name="fragments" time="0"/>
+    <testcase classname="hmmer" name="nonresidues" time="0"/>
+    <testcase classname="hmmer" name="opt-annotation" time="0"/>
+    <testcase classname="hmmer" name="dup-names" time="0"/>
+    <testcase classname="hmmer" name="mapali-again" time="0"/>
+    <testcase classname="hmmer" name="delete-corruption" time="0"/>
+    <testcase classname="hmmer" name="msa-integrity" time="0"/>
+    <testcase classname="hmmer" name="hmmemit-consensus" time="0"/>
+    <testcase classname="hmmer" name="hmmconvert" time="0"/>
+    <testcase classname="hmmer" name="h82" time="0"/>
+    <testcase classname="hmmer" name="stdin_pipes" time="0">
+      <failure/>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer_generic" time="0">
+      <failure/>
+    </testcase>
+    <testcase classname="hmmer" name="hmmpgmd_ga" time="0"/>
+    <testcase classname="hmmer" name="hmmalign" time="0"/>
+    <testcase classname="hmmer" name="hmmalign/-h" time="0"/>
+    <testcase classname="hmmer" name="hmmalign/-o" time="0"/>
+    <testcase classname="hmmer" name="hmmalign/--mapali" time="0"/>
+    <testcase classname="hmmer" name="hmmalign/--trim" time="0"/>
+    <testcase classname="hmmer" name="hmmalign/--amino" time="0"/>
+    <testcase classname="hmmer" name="hmmalign/--informat" time="0"/>
+    <testcase classname="hmmer" name="hmmalign/--outformat" time="0"/>
+    <testcase classname="hmmer" name="build" time="0"/>
+    <testcase classname="hmmer" name="build/-h" time="0"/>
+    <testcase classname="hmmer" name="build/-n" time="0"/>
+    <testcase classname="hmmer" name="build/-o" time="0"/>
+    <testcase classname="hmmer" name="build/-O" time="0"/>
+    <testcase classname="hmmer" name="build/--amino" time="0"/>
+    <testcase classname="hmmer" name="build/--dna" time="0"/>
+    <testcase classname="hmmer" name="build/--rna" time="0"/>
+    <testcase classname="hmmer" name="build/--fast" time="0"/>
+    <testcase classname="hmmer" name="build/--hand" time="0"/>
+    <testcase classname="hmmer" name="build/--symfrac" time="0"/>
+    <testcase classname="hmmer" name="build/--fragthresh" time="0"/>
+    <testcase classname="hmmer" name="build/--wpb" time="0"/>
+    <testcase classname="hmmer" name="build/--wgsc" time="0"/>
+    <testcase classname="hmmer" name="build/--wblosum" time="0"/>
+    <testcase classname="hmmer" name="build/--wnone" time="0"/>
+    <testcase classname="hmmer" name="build/--wid" time="0"/>
+    <testcase classname="hmmer" name="build/--eent" time="0"/>
+    <testcase classname="hmmer" name="build/--eclust" time="0"/>
+    <testcase classname="hmmer" name="build/--enone" time="0"/>
+    <testcase classname="hmmer" name="build/--eset" time="0"/>
+    <testcase classname="hmmer" name="build/--ere" time="0"/>
+    <testcase classname="hmmer" name="build/--esigma" time="0"/>
+    <testcase classname="hmmer" name="build/--eid" time="0"/>
+    <testcase classname="hmmer" name="build/--pnone" time="0"/>
+    <testcase classname="hmmer" name="build/--plaplace" time="0"/>
+    <testcase classname="hmmer" name="build/--EmL" time="0"/>
+    <testcase classname="hmmer" name="build/--EmN" time="0"/>
+    <testcase classname="hmmer" name="build/--EvL" time="0"/>
+    <testcase classname="hmmer" name="build/--EvN" time="0"/>
+    <testcase classname="hmmer" name="build/--EfL" time="0"/>
+    <testcase classname="hmmer" name="build/--EfN" time="0"/>
+    <testcase classname="hmmer" name="build/--Eft" time="0"/>
+    <testcase classname="hmmer" name="build/--informat" time="0"/>
+    <testcase classname="hmmer" name="build/--seed" time="0"/>
+    <testcase classname="hmmer" name="hmmemit" time="0"/>
+    <testcase classname="hmmer" name="hmmemit/-h" time="0"/>
+    <testcase classname="hmmer" name="hmmemit/-c" time="0"/>
+    <testcase classname="hmmer" name="hmmemit/-o" time="0"/>
+    <testcase classname="hmmer" name="hmmemit/-p" time="0"/>
+    <testcase classname="hmmer" name="hmmemit/-N" time="0"/>
+    <testcase classname="hmmer" name="hmmemit/-L" time="0"/>
+    <testcase classname="hmmer" name="hmmemit/--local" time="0"/>
+    <testcase classname="hmmer" name="hmmemit/--unilocal" time="0"/>
+    <testcase classname="hmmer" name="hmmemit/--glocal" time="0"/>
+    <testcase classname="hmmer" name="hmmemit/--uniglocal" time="0"/>
+    <testcase classname="hmmer" name="search" time="0"/>
+    <testcase classname="hmmer" name="search/-h" time="0"/>
+    <testcase classname="hmmer" name="search/-o" time="0"/>
+    <testcase classname="hmmer" name="search/-A" time="0"/>
+    <testcase classname="hmmer" name="search/--tblout" time="0"/>
+    <testcase classname="hmmer" name="search/--domtblout" time="0"/>
+    <testcase classname="hmmer" name="search/--acc" time="0"/>
+    <testcase classname="hmmer" name="search/--noali" time="0"/>
+    <testcase classname="hmmer" name="search/--notextw" time="0"/>
+    <testcase classname="hmmer" name="search/--textw" time="0"/>
+    <testcase classname="hmmer" name="search/-E" time="0"/>
+    <testcase classname="hmmer" name="search/-T" time="0"/>
+    <testcase classname="hmmer" name="search/--domE" time="0"/>
+    <testcase classname="hmmer" name="search/--domT" time="0"/>
+    <testcase classname="hmmer" name="search/--incE" time="0"/>
+    <testcase classname="hmmer" name="search/--incT" time="0"/>
+    <testcase classname="hmmer" name="search/--incdomE" time="0"/>
+    <testcase classname="hmmer" name="search/--incdomT" time="0"/>
+    <testcase classname="hmmer" name="search/--cut_ga" time="0"/>
+    <testcase classname="hmmer" name="search/--cut_nc" time="0"/>
+    <testcase classname="hmmer" name="search/--cut_tc" time="0"/>
+    <testcase classname="hmmer" name="search/--max" time="0"/>
+    <testcase classname="hmmer" name="search/--F1" time="0"/>
+    <testcase classname="hmmer" name="search/--F2" time="0"/>
+    <testcase classname="hmmer" name="search/--F3" time="0"/>
+    <testcase classname="hmmer" name="search/--nobias" time="0"/>
+    <testcase classname="hmmer" name="search/--nonull2" time="0"/>
+    <testcase classname="hmmer" name="search/-Z" time="0"/>
+    <testcase classname="hmmer" name="search/--domZ" time="0"/>
+    <testcase classname="hmmer" name="search/--seed" time="0"/>
+    <testcase classname="hmmer" name="search/--tformat" time="0"/>
+    <testcase classname="hmmer" name="jackhmmer" time="0"/>
+    <testcase classname="hmmer" name="j/-h" time="0"/>
+    <testcase classname="hmmer" name="j/-N" time="0"/>
+    <testcase classname="hmmer" name="j/-o" time="0"/>
+    <testcase classname="hmmer" name="j/-A" time="0"/>
+    <testcase classname="hmmer" name="j/--tblout" time="0"/>
+    <testcase classname="hmmer" name="j/--domtblout" time="0"/>
+    <testcase classname="hmmer" name="j/--chkhmm" time="0"/>
+    <testcase classname="hmmer" name="j/--chkali" time="0"/>
+    <testcase classname="hmmer" name="j/--acc" time="0"/>
+    <testcase classname="hmmer" name="j/--noali" time="0"/>
+    <testcase classname="hmmer" name="j/--notextw" time="0"/>
+    <testcase classname="hmmer" name="j/--textw" time="0"/>
+    <testcase classname="hmmer" name="j/--popen" time="0"/>
+    <testcase classname="hmmer" name="j/--pextend" time="0"/>
+    <testcase classname="hmmer" name="j/--mxfile" time="0"/>
+    <testcase classname="hmmer" name="j/-E" time="0"/>
+    <testcase classname="hmmer" name="j/-T" time="0"/>
+    <testcase classname="hmmer" name="j/--domE" time="0"/>
+    <testcase classname="hmmer" name="j/--domT" time="0"/>
+    <testcase classname="hmmer" name="j/--incE" time="0"/>
+    <testcase classname="hmmer" name="j/--incT" time="0"/>
+    <testcase classname="hmmer" name="j/--incdomE" time="0"/>
+    <testcase classname="hmmer" name="j/--incdomT" time="0"/>
+    <testcase classname="hmmer" name="j/--max" time="0"/>
+    <testcase classname="hmmer" name="j/--F1" time="0"/>
+    <testcase classname="hmmer" name="j/--F2" time="0"/>
+    <testcase classname="hmmer" name="j/--F3" time="0"/>
+    <testcase classname="hmmer" name="j/--nobias" time="0"/>
+    <testcase classname="hmmer" name="j/--EmL" time="0"/>
+    <testcase classname="hmmer" name="j/--EmN" time="0"/>
+    <testcase classname="hmmer" name="j/--EvL" time="0"/>
+    <testcase classname="hmmer" name="j/--EvN" time="0"/>
+    <testcase classname="hmmer" name="j/--EfL" time="0"/>
+    <testcase classname="hmmer" name="j/--EfN" time="0"/>
+    <testcase classname="hmmer" name="j/--Eft" time="0"/>
+    <testcase classname="hmmer" name="j/--nonull2" time="0"/>
+    <testcase classname="hmmer" name="j/-Z" time="0"/>
+    <testcase classname="hmmer" name="j/--domZ" time="0"/>
+    <testcase classname="hmmer" name="j/--seed" time="0"/>
+    <testcase classname="hmmer" name="j/--qformat" time="0"/>
+    <testcase classname="hmmer" name="j/--tformat" time="0"/>
+    <testcase classname="hmmer" name="phmmer" time="0"/>
+    <testcase classname="hmmer" name="phmmer/-h" time="0"/>
+    <testcase classname="hmmer" name="phmmer/-o" time="0"/>
+    <testcase classname="hmmer" name="phmmer/-A" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--tblout" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--domtblout" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--acc" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--noali" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--notextw" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--textw" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--popen" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--pextend" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--mxfile" time="0"/>
+    <testcase classname="hmmer" name="phmmer/-E" time="0"/>
+    <testcase classname="hmmer" name="phmmer/-T" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--domE" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--domT" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--incE" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--incT" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--incdomE" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--incdomT" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--max" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--F1" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--F2" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--F3" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--nobias" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--EmL" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--EmN" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--EvL" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--EvN" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--EfL" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--EfN" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--Eft" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--nonull2" time="0"/>
+    <testcase classname="hmmer" name="phmmer/-Z" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--domZ" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--seed" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--qformat" time="0"/>
+    <testcase classname="hmmer" name="phmmer/--tformat" time="0"/>
+    <testcase classname="hmmer" name="nhmmer" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/-h" time="0"/>
+    <testcase classname="hmmer" name="nhmmer/-o" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/-A" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--tblout" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--dfamtblout" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--acc" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--noali" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--notextw" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--textw" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/-E" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/-T" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--incE" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--incT" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--max" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--F1" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--F2" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--F3" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--nobias" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--nonull2" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/-Z" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="nhmmer/--seed" time="0">
+      <failure message="crash">crash</failure>
+    </testcase>
+    <testcase classname="hmmer" name="h39" time="0"/>
+  </testsuite>
 </testsuites>
