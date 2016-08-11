@@ -1,0 +1,8 @@
+ <testcase name="foo"
+            time="10:46"/>
+ <testcase name="bar"
+            time="10:47">
+    <failure type="failure">
+        hosed
+    </failure>
+  </testcase>
